@@ -1,0 +1,70 @@
+.navbar-main-row {
+    display: flex;
+}
+#navbar-container {
+    display: inline-block;
+}
+.gather-logo {
+    height: 150px;
+}
+#logo-container {
+    display: flex;
+    justify-content: right;
+    margin-left: -50px;
+}
+.navbar-row-one a {
+    font-size: 45px;
+    font-weight: 200;
+    font-family: 'Ovo', serif;
+    margin-left: 40px;
+}
+.home-hero-banner {
+    display: flex;
+}
+#banner-col-left {
+    height: 500px;
+    background-color: #cde1d5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#banner-col-right {
+    height: 500px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-img img {
+    height: 300px;
+}
+#banner-section-title {
+    font-size: 40px;
+    font-family: 'Ovo', serif;
+}
+#banner-section-subheader {
+    font-size: 35px;
+    font-family: 'Ovo', serif;
+}
+#banner-section-body {
+    padding: 15px 50px;
+}
+@media (max-width: 767px) {
+    .navbar-main-row, .home-hero-banner {
+        flex-direction: column-reverse;
+    }
+    #logo-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .navbar-row-one {
+        text-align: center;
+    }
+    .navbar-row-one a {
+        margin-right: 0px;
+    }
+    #navbar-col-left > div.navbar-row-two > nav > div {
+        display: inline-block;
+    }
+}
