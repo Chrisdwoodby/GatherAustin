@@ -1,8 +1,11 @@
 .navbar-main-row {
     display: flex;
 }
+h2, h1, h3 {
+    font-family: 'Ovo', serif;
+}
 #navbar-container {
-    display: inline-block;
+    margin-left: 40px;
 }
 .gather-logo {
     height: 150px;
@@ -15,6 +18,7 @@
 .navbar-row-one a {
     font-size: 45px;
     font-weight: 200;
+    text-transform: uppercase;
     font-family: 'Ovo', serif;
     margin-left: 40px;
 }
@@ -25,6 +29,7 @@
     height: 500px;
     background-color: #cde1d5;
     display: flex;
+    color: #777;
     align-items: center;
     text-align: center;
 }
@@ -49,6 +54,44 @@
 #banner-section-body {
     padding: 15px 50px;
 }
+.home-about-section {
+    background-color: #fafafa;
+    padding: 100px 0px;
+}
+#home-about-container {
+    display: flex;
+}
+#about-col-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about-col-right {
+    display: flex;
+    color: #777;
+    font-family: 'Ovo', serif;
+    align-items: center;
+    justify-content: center;
+}
+.home-about-img img {
+    height: 250px;
+}
+.home-faq-section {
+    padding: 100px 0px;
+    background-color: #5580a1
+}
+#home-faq-container {
+    display: flex;
+}
+.home-faq-section h2 {
+    text-align: center;
+    color: #fff;
+}
+#home-faq-container .card {
+    margin: 25px;
+    background-color: #fafafa;
+    color: #777;
+}
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
         flex-direction: column-reverse;
@@ -62,9 +105,13 @@
         text-align: center;
     }
     .navbar-row-one a {
-        margin-right: 0px;
+        margin-left: 0px;
     }
     #navbar-col-left > div.navbar-row-two > nav > div {
+        display: inline-block;
+        margin-left: 0px;
+    }
+    #home-faq-container, #home-about-container {
         display: inline-block;
     }
 }
