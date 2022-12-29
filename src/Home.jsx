@@ -4,7 +4,7 @@ import cross from '../media/cross.webp'
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
-const Home = function() {
+export default function Home() {
     return (
       <div>
         <div class="home-hero-banner">
@@ -79,5 +79,3 @@ const Home = function() {
       </div>
     )
 }
-
-export default Home;

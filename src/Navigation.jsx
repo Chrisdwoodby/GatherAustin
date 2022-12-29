@@ -2,9 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Col from 'react-bootstrap/Col';
-import logo from '../media/logo.webp'
+import logo from '../media/logo.webp';
 
-const Navigation = function() {
+export default function Navigation() {
 
     return (
       <>
@@ -37,5 +37,3 @@ const Navigation = function() {
       </>
     )
 }
-
-export default Navigation;
