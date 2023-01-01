@@ -26,7 +26,7 @@ h2, h1, h3 {
     display: flex;
 }
 #banner-col-left {
-    height: 500px;
+    padding: 70px 0px;
     background-color: #cde1d5;
     display: flex;
     color: #777;
@@ -34,7 +34,7 @@ h2, h1, h3 {
     text-align: center;
 }
 #banner-col-right {
-    height: 500px;
+    padding: 70px 0px;
     background-color: #fafafa;
     display: flex;
     align-items: center;
@@ -123,6 +123,12 @@ h2, h1, h3 {
 .social-icons a:hover {
     transform: scale(1.3);
 }
+.bottom-footer-section {
+    text-align: center;
+    background-color: #cde1d5;
+    padding: 10px;
+    color: #777;
+}
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
         flex-direction: column-reverse;
@@ -141,6 +147,18 @@ h2, h1, h3 {
     #navbar-col-left > div.navbar-row-two > nav > div {
         display: inline-block;
         margin-left: 0px;
+    }
+    .banner-img img {
+        height: 250px;
+    }
+    #banner-col-right {
+        padding: 50px 0px;
+    }
+    #banner-col-left {
+        padding: 50px 0px;
+    }
+    #about-col-right {
+        text-align: center;
     }
     #home-faq-container, #home-about-container {
         display: inline-block;

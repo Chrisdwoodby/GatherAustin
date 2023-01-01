@@ -25,14 +25,14 @@ export default function Home() {
         </div>
         <div class="home-about-section">
           <Container id="home-about-container">
-            <Col md={6} id="about-col-left">
+            <Col md={4} id="about-col-left">
               <figure class="home-about-img">
-                <img src={cross} alt="Gather Austin Group Picture"/>
+                <img src={cross} alt="Cross image"/>
               </figure>
             </Col>
-            <Col md={6} id="about-col-right">
+            <Col md={8} id="about-col-right">
               <section>
-                <h1>Austins Inclusive Youth Group</h1>
+                <h1>Austins Inclusive Young Adult Group</h1>
                 <article>Gather Austin is a community for young adults to deepen relationships, nurture faith, ask hard questions, and be filled with hope. We welcome all people across race, faith background, gender, sexuality, and perspective.</article>
               </section>
             </Col>
