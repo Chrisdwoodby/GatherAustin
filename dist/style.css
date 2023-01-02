@@ -129,6 +129,18 @@ h2, h1, h3 {
     padding: 10px;
     color: #777;
 }
+.contact-form-section {
+    background-color: #fafafa;
+    text-align: center;
+}
+#contact-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+}
+iframe {
+    width: 50%;
+}
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
         flex-direction: column-reverse;
