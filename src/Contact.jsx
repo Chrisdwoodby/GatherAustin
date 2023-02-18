@@ -1,6 +1,7 @@
+import { remove } from "lodash";
 import { Container } from "react-bootstrap";
 
-export default function Contact() {
+export default function Contact(props) {
     var ifr = document.getElementById("JotFormIFrame-223626357076056");
     if (ifr) {
       var src = ifr.src;
@@ -16,9 +17,9 @@ export default function Contact() {
       ifr.src = src + "?" + iframeParams.join('&');
     }
     window.handleIFrameMessage = function(e) {
+      var iframe;
       if (typeof e.data === 'object') { return; }
       var args = e.data.split(":");
-      var iframe;
       if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
       if (!iframe) { return; }
       switch (args[0]) {
@@ -81,18 +82,14 @@ export default function Contact() {
       window.attachEvent("onmessage", handleIFrameMessage);
     }
     return (
-      <div class="contact-form-section">
-        <h1>contact</h1>
+      <div className="contact-form-section">
+        <h1>Contact Us</h1>
         <Container id="contact-form-container">
           <iframe
-            id="JotFormIFrame-223626357076056"
-            title="Contact Us"
-            onload="window.parent.scrollTo(0,0)"
-            allowtransparency="true"
-            allowfullscreen="true"
-            allow="geolocation; microphone; camera"
-            src="https://form.jotform.com/223626357076056"
-            scrolling="no">
+          id="JotFormIFrame-223626357076056"
+          title="Contact Us"
+          allow="geolocation; microphone; camera"
+          src="https://form.jotform.com/223626357076056">
           </iframe>
         </Container>
       </div>

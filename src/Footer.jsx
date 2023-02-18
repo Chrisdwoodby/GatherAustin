@@ -8,12 +8,12 @@ export default function footer(props) {
 
     return (
         <div>
-          <div class="footer-section">
+          <div className="footer-section">
             <footer>
               <Container>
                 <Row>
                   <Col id="footer-logo-col" md={4}>
-                    <figure class="footer-logo">
+                    <figure className="footer-logo">
                       <img src={logo} alt="Gather Austin Logo"/>
                     </figure>
                   </Col>
@@ -21,24 +21,22 @@ export default function footer(props) {
                     <Nav id="footer-menu">
                       <span>Menu</span>
                       <Nav.Link onClick={props.renderHome} href="#home">Home</Nav.Link>
-                      <Nav.Link onClick={props.renderContact} href="#contact">Contact Us</Nav.Link>
+                      <Nav.Link onClick={props.renderContact} href="#contact-form-container">Contact Us</Nav.Link>
                       <Nav.Link onClick={props.renderAbout} href="#about">About</Nav.Link>
                       <Nav.Link onClick={props.renderPartners} href="#partners">Partners</Nav.Link>
                     </Nav>
                   </Col>
                   <Col id="footer-social-icon-col" md={4}>
-                    <div class="social-icons">
-                      <a id="facebook" href="https://www.facebook.com/chris.woodby.1/" target="_blank" class="fa fa-facebook"></a>
-                      <a id="insta" href="https://www.instagram.com/chriswoodby/" target="_blank" class="fa fa-instagram"></a>
-                      <a id="git" href="https://github.com/Chrisdwoodby" target="_blank" class="fa fa-github"></a>
-                      <a id="linkedin" href="https://www.linkedin.com/in/christopher-woodby-766a88202/" target="_blank" class="fa fa-linkedin"></a>
+                    <div className="social-icons">
+                      <a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"></a>
+                      <a id="insta" href="https://instagram.com/gather_austin?igshid=YmMyMTA2M2Y=" target="_blank" className="fa fa-instagram"></a>
                     </div>
                   </Col>
                 </Row>
               </Container>
             </footer>
           </div>
-          <div class="bottom-footer-section">
+          <div className="bottom-footer-section">
             <Container>
               <section>
                 <span>Powered By Woodby Web Works</span>

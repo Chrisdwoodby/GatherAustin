@@ -42,14 +42,17 @@ h2, h1, h3 {
 }
 .banner-img img {
     height: 300px;
+    border-radius: 15px;
 }
 #banner-section-title {
     font-size: 40px;
     font-family: 'Ovo', serif;
+    color: #000;
 }
 #banner-section-subheader {
     font-size: 35px;
     font-family: 'Ovo', serif;
+    color: #000;
 }
 #banner-section-body {
     padding: 15px 50px;
@@ -75,14 +78,15 @@ h2, h1, h3 {
 .home-about-img img {
     height: 250px;
 }
-.home-faq-section {
+#home-faq-section {
     padding: 100px 0px;
     background-color: #fafafa
 }
 #home-faq-container {
     display: flex;
+    margin-top: 90px;
 }
-.home-faq-section h2 {
+#home-faq-section h2 {
     text-align: center;
     color: #777;
 }
@@ -90,12 +94,63 @@ h2, h1, h3 {
     margin: 25px;
     background-color: #fafafa;
     color: #777;
+    border-radius: 15px;
+}
+.faq {
+    display: block;
+    opacity: 0;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: opacity 1200ms, transform 1500ms;
+}
+#faq1 #faq-loaded {
+    transition-delay: 0ms;
+    opacity: 1;
+    transform: translate(0px, -80px);
+}
+#faq2 #faq-loaded {
+    transition-delay: 200ms;
+    opacity: 1;
+    transform: translate(0px, -80px);
+}
+#faq3 #faq-loaded {
+    transition-delay: 400ms;
+    opacity: 1;
+    transform: translate(0px, -80px);
+}
+.about-us-main-section {
+    min-height:100%;
+    /* height: 500px; */
+    background:linear-gradient(90deg, rgb(205, 225, 213, .1) 47%, rgba(0, 0, 0, 0.1) 99%), url('/skyline.webp');
+    background-size:cover;
+    /* margin-bottom: 150px; */
+    position: relative;
+    padding: 100px 0;
+    z-index: 1;
+}
+#about-left-col {
+    padding: 80px;
+    background: rgb(205, 225, 213, .85);
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#about-right-bottom-container {
+    padding: 35px;
+    background-color: #fafafa;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 2;
+    margin-top: -106px;
+    margin-bottom: 150px;
 }
 .footer-section {
     background-color: #5580a1;
+    padding: 30px 0px;
 }
 .footer-logo img {
-    height: 250px;
+    height: 150px;
 }
 .footer-section .col-md-4 {
     display: flex;
@@ -122,6 +177,7 @@ h2, h1, h3 {
 }
 .social-icons a:hover {
     transform: scale(1.3);
+    color: #d6e06e;
 }
 .bottom-footer-section {
     text-align: center;
@@ -133,13 +189,49 @@ h2, h1, h3 {
     background-color: #fafafa;
     text-align: center;
 }
+.contact-form-section h1 {
+    padding: 50px 0px;
+}
 #contact-form-container {
     display: flex;
     justify-content: center;
-    padding: 50px 10px;
+    padding: 40px 10px;
 }
 iframe {
-    width: 50%;
+  width: 50%;
+}
+.partners-section {
+    background-color: #fafafa;
+    padding: 50px 0px;
+}
+.partners-page-header {
+    padding: 50px 0px;
+    text-align: center;
+}
+.partners-section .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+#about-banner-row {
+    display: flex;
+}
+#about-us-page-right h1, #about-us-page-right span {
+    text-shadow: .5px .5px #fff;
+    font-weight: bold;
+}
+#about-us-page-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+#about-contact-btn {
+    padding: 10px 15px;
+    background-color: #cde1d5;
+    color: #000;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
@@ -174,5 +266,26 @@ iframe {
     }
     #home-faq-container, #home-about-container {
         display: inline-block;
+    }
+    iframe {
+        width: 90%;
+    }
+    .contact-form-section h1 {
+        padding: 40px 0px;
+    }
+    #contact-form-container {
+        padding: 10px 10px;
+    }
+    .partners-section .col-md-6 {
+        justify-content: unset;
+        display: unset;
+        text-align: center;
+    }
+    #about-left-col {
+        padding: 28px;
+        margin: 10px;
+    }
+    #about-banner-row {
+        flex-direction: column-reverse;
     }
 }

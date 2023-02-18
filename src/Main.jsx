@@ -11,7 +11,7 @@ export default function Main(props) {
     const [about, viewAbout] = useState(false);
     const [home, viewHome] = useState(true);
     const [contact, viewContact] = useState(false);
-    
+
     function renderAbout() {
         viewAbout(true);
         viewHome(false);
