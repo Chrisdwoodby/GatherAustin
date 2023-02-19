@@ -243,7 +243,7 @@ iframe {
 #social-media-divider .fa-facebook-f:before, #social-media-divider .fa-facebook:before {
     /* padding: 7px 10px; */
     background-color: #134563;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 #social-media-divider a {
     background-color: #134563;
