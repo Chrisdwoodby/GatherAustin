@@ -1,5 +1,5 @@
 import Col from 'react-bootstrap/Col';
-import banner from '../media/hero-banner.webp'
+import banner from '../media/hero-banner.webp';
 import cross from '../media/cross.webp'
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
@@ -23,22 +23,26 @@ export default function Home(props) {
   
     return (
       <div>
-        <div className="home-hero-banner">
-          <Col md={6} id="banner-col-left">
-            <section>
-              <span id="banner-section-title">Welcome</span>
-              <br></br>
-              <span id="banner-section-subheader">Austin Young Adults</span>
-              <br></br>
+      <div className="about-us-main-section">
+        <Container>
+          <div id="about-banner-row">
+            <Col id="about-left-col" md={6}>
+              <h1>welcome to gather austin</h1>
               <article id="banner-section-body">Gather Austin is a community for young adults to deepen relationships, nurture faith, ask hard questions, and be filled with hope. We welcome all people across race, faith background, gender, sexuality, and perspective.</article>
-            </section>
-          </Col>
-          <Col md={6} id="banner-col-right">
-            <figure className="banner-img">
-              <img src={banner} alt="Gather Austin Group Picture"/>
-            </figure>
-          </Col>
-        </div>
+            </Col>
+            <Col id="about-us-page-right" md={6}>
+              <h3>We're glad you're here</h3>
+              <span>Click Below to Get Connected and Learn More</span>
+              <a id="about-contact-btn" onClick={props.renderContact}>Contact us</a>
+            </Col>
+          </div>
+        </Container>
+      </div>
+      <div id="social-media-divider">
+        <Col md={6}><span>Join our Facebook Group for monthly meeting updates!</span></Col>
+        <Col md={6}><a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"> Gather Austin</a></Col>
+      </div>
+
         <div className="home-about-section">
           <Container id="home-about-container">
             <Col md={4} id="about-col-left">
@@ -48,22 +52,21 @@ export default function Home(props) {
             </Col>
             <Col md={8} id="about-col-right">
               <section>
-                <h1>Austins Inclusive Young Adult Group</h1>
+                <h2>Austins Inclusive Young Adult Group</h2>
                 <article>Gather Austin is a community for young adults to deepen relationships, nurture faith, ask hard questions, and be filled with hope. We welcome all people across race, faith background, gender, sexuality, and perspective.</article>
               </section>
             </Col>
           </Container>
         </div>
         <div id="home-faq-section">
-          <h2>Common Questions</h2>
+          <h3>Common Questions</h3>
           <Container id="home-faq-container">
             <Col md={4} id="faq1">
             <Card className="faq" id="faq1">
               <Card.Body>
                 <Card.Title>Do I need to belong to a certain type of church?</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  Not at all, all are welcome!
                 </Card.Text>
               </Card.Body>
              </Card>
@@ -73,8 +76,7 @@ export default function Home(props) {
               <Card.Body>
                 <Card.Title>Where and when does Gather Austin meet?</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  Gather Austin typically meets once a month at Central Market located at 4001 N Lamar Blvd, Austin, TX 78705.
                 </Card.Text>
               </Card.Body>
              </Card>
@@ -84,8 +86,7 @@ export default function Home(props) {
               <Card.Body>
                 <Card.Title>Do I need to bring anything or RSVP for meetups?</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  There is no need to RSVP or to bring anything. Drinks and snacks will be provided!
                 </Card.Text>
               </Card.Body>
              </Card>

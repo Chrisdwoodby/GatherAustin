@@ -1,54 +1,45 @@
 import { Container, Row, Col } from "react-bootstrap";
+import banner from '../media/hero-banner.webp'
 
 export default function About(props) {
 
     return (
-    <div>
-      <div className="about-us-main-section">
-        <Container>
-          <div id="about-banner-row">
-            <Col id="about-left-col" md={6}>
-              <article>
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added
-              </article>
+    <div id="about-us-section-col-6-container">
+        <div className="home-hero-banner">
+          <Col md={6} id="banner-col-left">
+            <section>
+              <span id="banner-section-title">Welcome</span>
               <br></br>
-              <article>
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added
+              <span id="banner-section-subheader">Austin Young Adults</span>
+              <br></br>
+              <article id="banner-section-body">
+              Join young adults from the Austin area in fellowship,
+               worship, community, and discussion. Gather meets once a
+                month to spend time asking challenging questions of 
+                ourselves, our faith, and our world. All young adults 
+                around their 20's to 30's from across race, faith background, gender,
+                sexuality, and perspective are welcome here to meet, 
+                to be, to gather.
               </article>
-            </Col>
-            <Col id="about-us-page-right" md={6}>
-              <h1>welcome to gather austin</h1>
-              <span>Click below to contact us and learn more</span>
-              <a id="about-contact-btn">Contact us</a>
-            </Col>
-          </div>
+            </section>
+          </Col>
+          <Col md={6} id="banner-col-right">
+            <figure className="banner-img">
+              <img src={banner} alt="Gather Austin Group Picture"/>
+            </figure>
+          </Col>
+        </div>
+        <div className="contact-form-section">
+        <h2>Get Connected</h2>
+        <Container id="contact-form-container">
+          <iframe
+          id="JotFormIFrame-222988220239056"
+          title="Contact Us"
+          allow="geolocation; microphone; camera"
+          src="https://form.jotform.com/222988220239056">
+          </iframe>
         </Container>
       </div>
-      {/* <div>
-        <Container>
-          <Row></Row> 
-                  <article>
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added 
-                  this is filler text because it needs to be added
-                  </article>   
-        </Container>
-      </div>  */}
     </div>
     )
 }

@@ -19,7 +19,7 @@ export default function footer(props) {
                   </Col>
                   <Col id="footer-menu-col" md={4}>
                     <Nav id="footer-menu">
-                      <span>Menu</span>
+                      <span id="footer-menu-title">Menu</span>
                       <Nav.Link onClick={props.renderHome} href="#home">Home</Nav.Link>
                       <Nav.Link onClick={props.renderContact} href="#contact-form-container">Contact Us</Nav.Link>
                       <Nav.Link onClick={props.renderAbout} href="#about">About</Nav.Link>

@@ -4,6 +4,13 @@
 h2, h1, h3 {
     font-family: 'Ovo', serif;
 }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#about-col-right > section > article {
+    text-align:center;
+}
 #navbar-container {
     margin-left: 40px;
 }
@@ -122,7 +129,7 @@ h2, h1, h3 {
 .about-us-main-section {
     min-height:100%;
     /* height: 500px; */
-    background:linear-gradient(90deg, rgb(205, 225, 213, .1) 47%, rgba(0, 0, 0, 0.1) 99%), url('/skyline.webp');
+    background:linear-gradient(90deg, rgb(214, 215, 214, .2) 47%, rgba(214, 215, 214, 0.3) 99%), url('/skyline.webp');
     background-size:cover;
     /* margin-bottom: 150px; */
     position: relative;
@@ -215,9 +222,36 @@ iframe {
 #about-banner-row {
     display: flex;
 }
-#about-us-page-right h1, #about-us-page-right span {
+#about-us-page-right h1 {
     text-shadow: .5px .5px #fff;
+    font-weight: 800;
+}
+#home-faq-section > h3 {
+    text-align: center;
+}
+#social-media-divider {
+    background-color: #cde1d5;
+    display: flex;
+    padding: 15px;
+}
+#social-media-divider .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+}
+#social-media-divider .fa-facebook-f:before, #social-media-divider .fa-facebook:before {
+    /* padding: 7px 10px; */
+    background-color: #134563;
+    /* border-radius: 50%; */
+}
+#social-media-divider a {
+    background-color: #134563;
+    padding: 10px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
 }
 #about-us-page-right {
     display: flex;
@@ -229,13 +263,56 @@ iframe {
     padding: 10px 15px;
     background-color: #cde1d5;
     color: #000;
-    border-radius: 15px;
+    border-radius: 30px;
     margin-top: 25px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#about-contact-btn:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+iframe html {
+    background-color: none !important;
+}
+#footer-menu-title {
+    color: #fff;
+    font-weight: bold;
+}
+#about-us-page-right {
+    padding: 15px;
+    color: #fff;
+}
+#about-us-page-right span {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+#about-us-page-right h3 {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 30px;
+    /* font-weight: bold; */
+}
+#about-col-right > section > h2 {
+    text-align: center;
+}
+#banner-section-body {
+    text-align: center;
+}
+.home-hero-banner {
+    margin-bottom: 100px;
+}
+#about-us-section-col-6-container .contact-form-section {
+    background-color: #fff;
 }
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
         flex-direction: column-reverse;
+    }
+    .about-us-main-section {
+        padding: 50px 0px;
+        background-position: center;
     }
     #logo-container {
         display: flex;
@@ -286,6 +363,52 @@ iframe {
         margin: 10px;
     }
     #about-banner-row {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    #about-us-page-right h1 {
+        font-size: 40px;
+        text-shadow: none;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    #banner-section-body {
+        padding: unset;
+    }
+    #about-us-page-right {
+        color: #fff;
+    }
+    #social-media-divider a {
+        padding: 10px 15px 10px 3px;
+        display: flex;
+    }
+    #social-media-divider .fa-facebook-f:before, #social-media-divider .fa-facebook:before {
+        padding: 7px 10px;
+    }
+    #about-us-page-right {
+        text-shadow: none;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #about-left-col {
+        padding: 15px 0px;
+    }
+    #about-us-page-right {
+        text-align: center;
+        color: #fff;
+        font-size: larger;
+    }
+    #banner-section-body {
+        text-align: center;
+    }
+    #about-us-section-col-6-container {
+        padding-bottom: 100px;
+    }
+    .partners-section {
+        padding: 50px 0px 150px 0px;
     }
 }
