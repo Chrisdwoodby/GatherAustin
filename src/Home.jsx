@@ -76,7 +76,7 @@ export default function Home(props) {
               <Card.Body>
                 <Card.Title>Where and when does Gather Austin meet?</Card.Title>
                 <Card.Text>
-                  Gather Austin typically meets once a month at Central Market located at 4001 N Lamar Blvd, Austin, TX 78705.
+                  Gather Austin meets on the first Thursday of the month, typically at Central Market located at 4001 N Lamar Blvd, Austin, TX 78705.
                 </Card.Text>
               </Card.Body>
              </Card>
