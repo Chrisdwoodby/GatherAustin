@@ -40,7 +40,10 @@ export default function Home(props) {
       </div>
       <div id="social-media-divider">
         <Col md={6}><span>Join our Facebook Group for monthly meeting updates!</span></Col>
-        <Col md={6}><a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"> Gather Austin</a></Col>
+        <Col md={6}>
+          <a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"> Gather Austin</a>
+          {/* <a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-instagram"> Gather Austin</a> */}
+        </Col>
       </div>
 
         <div className="home-about-section">

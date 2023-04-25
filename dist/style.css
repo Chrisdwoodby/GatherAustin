@@ -129,7 +129,8 @@ h1 {
 .about-us-main-section {
     min-height:100%;
     /* height: 500px; */
-    background:linear-gradient(90deg, rgb(214, 215, 214, .2) 47%, rgba(214, 215, 214, 0.3) 99%), url('/skyline.webp');
+    background:linear-gradient(90deg, rgba(56, 94, 105, 0.5) 47%, rgba(56, 94, 105, 0.5) 99%), url('/skyline.webp');
+    /* background:linear-gradient(90deg, rgb(214, 215, 214, .2) 47%, rgba(214, 215, 214, 0.3) 99%), url('/skyline.webp'); */
     background-size:cover;
     /* margin-bottom: 150px; */
     position: relative;
@@ -260,9 +261,13 @@ iframe {
     margin-top: 60px;
 }
 #about-contact-btn {
-    padding: 10px 15px;
-    background-color: #cde1d5;
+    padding: 15px 25px;
+    border: 2px solid #cde1d5;
     color: #000;
+    font-family: 'Ovo', serif;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
     border-radius: 30px;
     margin-top: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -284,15 +289,18 @@ iframe html {
 }
 #about-us-page-right span {
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    /* text-shadow: 2px 2px 2px #000; */
     font-size: 25px;
     /* font-weight: bold; */
 }
 #about-us-page-right h3 {
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-size: 30px;
-    /* font-weight: bold; */
+    /* text-shadow: 2px 2px 2px #000; */
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar-expand .navbar-nav .nav-link {
+    font-size: 20px;
 }
 #about-col-right > section > h2 {
     text-align: center;
@@ -306,9 +314,25 @@ iframe html {
 #about-us-section-col-6-container .contact-form-section {
     background-color: #fff;
 }
+.partners-row {
+    padding: 50px 0px;
+}
+.partners-row h2 {
+    text-align: center;
+    padding: 25px 0px 50px 0px;
+}
+.navbar-row-one {
+    margin-top: 10px;
+}
 @media (max-width: 767px) {
     .navbar-main-row, .home-hero-banner {
         flex-direction: column-reverse;
+    }
+    .navbar-expand .navbar-nav .nav-link {
+        font-size: 17px;
+    }
+    #navbar-col-left > div.navbar-row-one > div {
+        display: contents;
     }
     .about-us-main-section {
         padding: 50px 0px;
@@ -324,6 +348,7 @@ iframe html {
     }
     .navbar-row-one a {
         margin-left: 0px;
+        font-size: 2.5rem;
     }
     #navbar-col-left > div.navbar-row-two > nav > div {
         display: inline-block;

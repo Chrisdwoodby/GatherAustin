@@ -26,7 +26,7 @@ export default function Navigation(props) {
                 <Container id="navbar-container">
                   <Nav className="justify-content-center">
                     <Nav.Link onClick={props.renderHome} href="#home">Home</Nav.Link>
-                    <Nav.Link onClick={props.renderContact} href="#contact">Contact Us</Nav.Link>
+                    <Nav.Link onClick={props.renderContact} href="#contact">Contact</Nav.Link>
                     <Nav.Link onClick={props.renderAbout} href="#about">About</Nav.Link>
                     <Nav.Link onClick={renderFAQs} href="#partners">FAQ's</Nav.Link>
                     <Nav.Link onClick={props.renderPartners} href="#partners">Partners</Nav.Link>
