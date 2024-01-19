@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import banner from '../media/hero-banner.webp';
 import cross from '../media/cross.webp'
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
 export default function Home(props) {
@@ -94,6 +94,30 @@ export default function Home(props) {
               </Card.Body>
              </Card>
             </Col>
+          </Container>
+        </div>
+        <div>
+          <Container className="calendar-container">
+            <Row>
+              <Col className="calendar-col-left">
+              <h4 className="calendar-title">Stay Up-to-Date With the Gather Calendar</h4>
+              <div className="hidden-mobile">
+                <span>Follow us on social media for more regular updates and event details</span>
+                <div className="calendar-social-icons">
+                        <a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"></a>
+                        <a id="insta" href="https://instagram.com/gather_austin?igshid=YmMyMTA2M2Y=" target="_blank" className="fa fa-instagram"></a>
+                </div>
+              </div>
+              </Col>
+              <Col><iframe src="https://calendar.google.com/calendar/embed?src=gatheraustin%40gmail.com&ctz=America%2FChicago" width="800" height="600" scrolling="no"></iframe></Col>
+              <div className="hidden-desktop">
+                <span>Follow us on social media for more regular updates and event details</span>
+                <div className="calendar-social-icons">
+                        <a id="facebook" href="https://www.facebook.com/groups/637451804727252/" target="_blank" className="fa fa-facebook"></a>
+                        <a id="insta" href="https://instagram.com/gather_austin?igshid=YmMyMTA2M2Y=" target="_blank" className="fa fa-instagram"></a>
+                </div>
+              </div>
+            </Row>
           </Container>
         </div>
       </div>

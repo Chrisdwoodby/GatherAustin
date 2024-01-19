@@ -25,6 +25,22 @@ export default function Partners(props) {
                   <p><strong>Palm Valley Lutheran Church, Round Rock</strong></p>
                   <p><a href="https://www.pvlc.org/ " target="_blank">www.pvlc.org/ </a></p>
                 </main>
+                <main>
+                  <p><strong>Immanuel Lutheran Church, Pflugerville </strong></p>
+                  <p><a href="https://ilcpville.org/" target="_blank">www.ilcpville.org</a></p>
+                </main>
+                <main>
+                  <p><strong>First English Lutheran Church, Austin</strong></p>
+                  <p><a href="https://www.felcaustin.org/" target="_blank">www.felcaustin.org</a></p>
+                </main>
+                <main>
+                  <p><strong>Spirit in the Hills Lutheran Church, Spicewood</strong></p>
+                  <p><a href="https://spiritinthehills.org/" target="_blank">spiritinthehills.org</a></p>
+                </main>
+                <main>
+                  <p><strong>Shepherd of the Hills Lutheran Church, Austin</strong></p>
+                  <p><a href="https://shephills.org/" target="_blank">shephills.org</a></p>
+                </main>
               </section>
             </Col>
             <Col md={6}>
@@ -36,18 +52,21 @@ export default function Partners(props) {
                 </main>
                 <main>
                   <p><strong>ELCA Young Adult Ministry</strong></p>
-                  <p>8765 W Higgins Road, Chicago, IL 60631</p>
                   <p><a href="https://sites.google.com/view/elcayoungadults/home" target="_blank">www.elcayoungadults.com</a></p>
                 </main>
                 <main>
                   <p><strong>Southwestern Texas Synod</strong></p>
-                  <p>8765 W Higgins Road, Chicago, IL 60631</p>
+                  <p>1090 Oestreich Dr. Seguin, TX 78155</p>
                   <p><a href="https://www.swtsynod.org/" target="_blank">www.swtsynod.org/</a></p>
                 </main>
                 <main>
                   <p><strong>Triumphant Love Lutheran Church</strong></p>
-                  <p>8765 W Higgins Road, Chicago, IL 60631</p>
+                  <p>9508 Great Hills Trail Austin, TX 78759</p>
                   <p><a href="https://tllc.org/" target="_blank">www.tllc.org/ </a></p>
+                </main>
+                <main>
+                  <p><strong>Lutheran Campus Ministry (LuMin) at UT Austin</strong></p>
+                  <p><a href="https://lcmaustin.org/ " target="_blank">lcmaustin.org</a></p>
                 </main>
               </section>
             </Col>
